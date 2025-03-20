@@ -7,7 +7,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "bibistellar.us.kg"
+CUSTOM_DOMAIN = "bibistellar.live"
 
 [env.dev.vars]
 MODE = "debug"
@@ -17,13 +17,13 @@ CUSTOM_DOMAIN = "exmaple.com"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-  { pattern = "docker.bibistellar.us.kg", custom_domain = true },
-  { pattern = "quay.bibistellar.us.kg", custom_domain = true },
-  { pattern = "gcr.bibistellar.us.kg", custom_domain = true },
-  { pattern = "k8s-gcr.bibistellar.us.kg", custom_domain = true },
-  { pattern = "k8s.bibistellar.us.kg", custom_domain = true },
-  { pattern = "ghcr.bibistellar.us.kg", custom_domain = true },
-  { pattern = "cloudsmith.bibistellar.us.kg", custom_domain = true },
+  { pattern = "docker.bibistellar.live", custom_domain = true },
+  { pattern = "quay.bibistellar.live", custom_domain = true },
+  { pattern = "gcr.bibistellar.live", custom_domain = true },
+  { pattern = "k8s-gcr.bibistellar.live", custom_domain = true },
+  { pattern = "k8s.bibistellar.live", custom_domain = true },
+  { pattern = "ghcr.bibistellar.live", custom_domain = true },
+  { pattern = "cloudsmith.bibistellar.live", custom_domain = true },
 ]
 
 [env.production.vars]
